@@ -1,0 +1,57 @@
+body{
+    text-transform: uppercase;
+    color:white; 
+    background-color:black; 
+    font-family: 'Rock Salt', cursive;
+}
+
+.primaryPhoto{
+    width: 100%; 
+    height: auto; 
+}
+
+.welcome{
+    margin-bottom: 2%; 
+    background-color: #BE1D1D; 
+    padding: 0.5em; 
+    text-align: center; 
+}
+
+.text-center{
+margin-bottom: 2%; 
+}
+
+.theme-button{
+    color: white; 
+}
+.theme-button:hover{
+    background-color: #ffc107; 
+}
+
+.pause-button{
+    background-color: #007bff; 
+}
+
+.pause-button:hover{
+    background-color: #007bff; 
+    color: #212529; 
+}
+
+.container{ 
+    line-height: 1.5em; 
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 1.2em; 
+    margin-bottom: 5%; 
+}
+
+.col-md-5{
+    border: 2px dashed white; 
+}
+
+.col-md-3{
+    border: 2px dashed white; 
+}
+
+#varPic{
+    width: 100%;  
+}

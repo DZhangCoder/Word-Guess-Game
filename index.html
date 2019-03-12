@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marvel Heroes Word Guess Game</title>
+
+    <!-- link to Bootstrap css and style.css file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+</head>
+
+<body>
+    <!-- head photo -->
+    <img class="primaryPhoto" src="assets/images/Header.jpg" alt="Marvel Heroes Photo">
+
+    <!-- welcome -->
+    <div class="welcome">Welcome to Marvel Heroes Word Guess Game!</div>
+    <div id="musicControls" class="text-center">
+            <button class="btn btn-warning btn-xs theme-button">
+                <span class="fa fa-music"></span> Play Theme!</button>
+            <button class="btn btn-dark btn-xs pause-button">
+                <span class="fa fa-pause"></span> Pause Song</button>
+        </div>
+
+    <!-- changing photos for game -->
+    <div class="container">
+        <div class="row">
+            <!-- sidebar(left) -->
+            <div class="col-md-2"></div>
+
+            <div class="col-md-3">
+                <img id="varPic" src="assets/images/Mlogo.jpg" alt="Marvel Logo">
+            </div>
+
+            <!-- game instructions -->
+            <div class="col-md-5">
+                <div>Press any key to get started!</div>
+
+                <div>Wins</div>
+                <div id="wins">0</div>
+
+                <div>Losses</div>
+                <div id="losses">0</div>
+
+                <div>Current Word</div>
+                <div id="currentWord"></div>
+
+                <div>Number of Guesses Remaining</div>
+                <div id="remainGuess">15</div>
+
+                <div>Letters Already Guessed</div>
+                <div id="alreadyGuessed"></div>
+            </div>
+            <!-- sidebar(right) -->
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <!-- link to js and jquery -->
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+
+</html>
