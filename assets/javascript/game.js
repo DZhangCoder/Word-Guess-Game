@@ -61,29 +61,38 @@ document.onkeyup = function () {
     // the condition of wins: numberRemain >= 0 and there is no "_ "in answerArray 
     if (numberRemain >= 0 && answerArray.indexOf("_" + " ") === -1) {
         wins++;
+
+        window.setTimeout(function () {
+            // Next thing to do
+
+            answerArray = [];
+            for (var i = 0; i < word.length; i++) {
+                answerArray[i] = "_" + " ";
+            }
+            currentWordText.textContent = answerArray;
+        },1000);
+
+        // When wins increment by 1, change the photo of heroes. 
+        document.getElementById("varPic").src = "assets/images/" + word + ".jpg";
+
         //When wins increment by 1, reset the game.
         arr = [];
         numberRemain = 15;
         word = Words[Math.floor(Math.random() * Words.length)];
-        answerArray = [];
-        for (var i = 0; i < word.length; i++) {
-            answerArray[i] = "_" + " ";
-        }
-        currentWordText.textContent = answerArray;
     }
     winsText.textContent = wins;
 }
 
 
-    // Gets Link for Theme Song
-    var audioElement = document.createElement("audio");
-    audioElement.setAttribute("src", "assets/music/The Avengers Theme Song.mp3");
+// Gets Link for Theme Song
+var audioElement = document.createElement("audio");
+audioElement.setAttribute("src", "assets/music/The Avengers Theme Song.mp3");
 
-    // Theme Button
-    $(".theme-button").on("click", function () {
-        audioElement.play();
-    });
-    $(".pause-button").on("click", function () {
-        audioElement.pause();
-    });
+// Theme Button
+document.getElementById("theme-button").onclick = function () {
+    audioElement.play();
+};
+document.getElementById("pause-button").onclick = function () {
+    audioElement.pause();
+};
 
