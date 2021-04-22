@@ -11,4 +11,4 @@ Marvel Word Guess Game is a word guess game that allows players to press any key
 ![WordGuessGame](assets/images/WGG.png)
 
 ### Link to Word Guess Game 
-https://dzhangcoder.github.io/Word-Guess-Game/
+https://dongdongzh.github.io/Word-Guess-Game/
